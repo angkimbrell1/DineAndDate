@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:background="@drawable/background_pink"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:layout_gravity="right"
+            android:layout_width="125dp"
+            android:layout_height="25dp"
+            android:onClick="logoutUser"
+            android:text="Log Out"
+            android:layout_margin="5dp"
+            android:background="@drawable/button"
+            android:textColor="#f7f2f2" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:id="@+id/profileImage"
+            android:src="@drawable/fries"
+            android:layout_margin="20dp"
+            />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/border"
+                android:hint="Name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose your absolute favorite!"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+    <Spinner
+        android:id="@+id/foodChoice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+
+        android:gravity="center"
+        android:spinnerMode="dropdown"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Beverage of choice?"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+    <Spinner
+        android:id="@+id/foodChoice2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:spinnerMode="dropdown"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favorite place to eat?"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+    <Spinner
+        android:id="@+id/foodChoice3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:spinnerMode="dropdown"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/confirm"
+        android:textColor="#f7f2f2"
+        android:background="@drawable/button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Confirm"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#636161"
+        android:background="@drawable/backbutton2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/back"
+        android:text="Back"
+        />
+
+
+
+</LinearLayout>

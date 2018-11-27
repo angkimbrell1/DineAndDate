@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_pink"
+    tools:context=".Registration">
+
+    <ImageView
+        android:layout_width="282dp"
+        android:layout_height="174dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/foodpic"></ImageView>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Email"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Name"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Password"
+        android:textColorHint="@color/white" />
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:buttonTint="#FFFFFF"
+            android:gravity="center"
+            android:text="Male"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:buttonTint="#FFFFFF"
+            android:gravity="center"
+            android:text="Female"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+    </RadioGroup>
+
+    <Button
+
+        android:id="@+id/registerButton"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/transparent"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp" />
+
+</LinearLayout>

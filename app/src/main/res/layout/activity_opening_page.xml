@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registration"
+    android:gravity="center"
+    android:background="@drawable/background_pink"
+    >
+
+    <TextView
+        android:id="@+id/text_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="cursive"
+        android:text="Welcome Back"
+        android:textAlignment="center"
+        android:textSize="48dp"
+        android:textStyle="normal|bold" />
+
+    <ImageView
+        android:layout_width="217dp"
+        android:layout_height="165dp"
+        android:layout_below="@+id/text_view_id"
+        android:scaleType="centerInside"
+        android:src="@drawable/burger">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FFFFFF"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/transparent"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/transparent"
+        android:text="No Account? Register!"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true" />
+
+</LinearLayout>

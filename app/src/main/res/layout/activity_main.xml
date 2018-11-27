@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_pink"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.ang.dineanddate.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:onClick="goToMatches"
+            android:text="Matches"
+            android:layout_margin="5dp"
+            android:background="@drawable/button"
+            android:textColor="#f7f2f2" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:onClick="goToSettings"
+            android:text="Settings"
+            android:layout_margin="5dp"
+            android:background="@drawable/button"
+            android:textColor="#f7f2f2" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/noMatches"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="164dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:src="@drawable/melon" />
+        <TextView
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't worry! You'll find your one in a melon!"/>
+        <TextView
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Back Later!"/>
+    </LinearLayout>
+
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/frame"
+        android:background="@drawable/background_pink"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rotation_degrees="15.5"
+        tools:context=".MyActivity"
+        />
+
+
+
+
+
+</LinearLayout>
